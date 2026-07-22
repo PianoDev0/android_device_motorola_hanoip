@@ -158,8 +158,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot-service.qti \
-    android.hardware.boot-service.qti.recovery
+    android.hardware.boot@1.2-impl-qti \
+    android.hardware.boot@1.2-service \
+    android.hardware.boot@1.2-impl-qti.recovery
+
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
 
 $(call soong_config_set,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
 
