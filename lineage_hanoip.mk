@@ -17,7 +17,7 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-TARGET_SUPPORTS_OMX_SERVICE := false
+TARGET_SUPPORTS_OMX_SERVICE := true
 
 # Inherit from hanoip device
 $(call inherit-product, device/motorola/hanoip/device.mk)
@@ -27,8 +27,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # extras
 # gms
-# $(call inherit-product, vendor/gms/gms_mini.mk)
-#WITH_GMS := true
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+WITH_GMS := true
 # Blur
 # TARGET_ENABLE_BLUR := true
 
