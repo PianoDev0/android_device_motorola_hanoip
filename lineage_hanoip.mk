@@ -27,10 +27,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # extras
 # gms
-$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
-WITH_GMS := true
+#$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+#WITH_GMS := true
 # Blur
 # TARGET_ENABLE_BLUR := true
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=1 \
+    ro.sf.blurs_are_expensive=1
+
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_hanoip
