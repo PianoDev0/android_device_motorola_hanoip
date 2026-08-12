@@ -17,7 +17,7 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-TARGET_SUPPORTS_OMX_SERVICE := true
+TARGET_SUPPORTS_OMX_SERVICE := false
 
 # Inherit from hanoip device
 $(call inherit-product, device/motorola/hanoip/device.mk)
@@ -31,10 +31,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 #WITH_GMS := true
 # Blur
 # TARGET_ENABLE_BLUR := true
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.surface_flinger.supports_background_blur=1 \
-    ro.sf.blurs_are_expensive=1
-
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_hanoip

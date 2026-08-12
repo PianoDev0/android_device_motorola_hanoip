@@ -65,7 +65,7 @@ BOARD_KERNEL_CMDLINE := \
     printk.devkmsg=on \
     firmware_class.path=/vendor/firmware_mnt/image
 
-BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_RAMDISK_USE_LZ4 := true
