@@ -51,20 +51,7 @@ TARGET_NO_BOOTLOADER := true
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := \
-    console=ttyMSM0,115200n8 \
-    androidboot.hardware=qcom \
-    androidboot.console=ttyMSM0 \
-    androidboot.memcg=1 \
-    lpm_levels.sleep_disabled=1 \
-    service_locator.enable=1 \
-    swiotlb=1 \
-    androidboot.usbcontroller=a600000.dwc3 \
-    earlycon=msm_geni_serial,0x880000 \
-    loop.max_part=7 \
-    printk.devkmsg=on \
-    firmware_class.path=/vendor/firmware_mnt/image
-
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 console=null androidboot.memcg=1 lpm_levels.sleep_disabled=1 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
@@ -74,6 +61,7 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/motorola/sm6150
 TARGET_KERNEL_CONFIG := \
     vendor/hanoip_defconfig
+TARGET_KERNEL_NO_GCC := true
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
@@ -135,6 +123,7 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Lineage Health
 # TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
