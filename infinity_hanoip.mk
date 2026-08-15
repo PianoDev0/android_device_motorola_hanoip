@@ -23,17 +23,20 @@ TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, device/motorola/hanoip/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-# extras
-# gms
-#$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
-#WITH_GMS := true
-# Blur
-# TARGET_ENABLE_BLUR := true
+# Maintainer name
+INFINITY_MAINTAINER := "JonashOfficial"
+
+# Whether Including Google Apps
+WITH_GAPPS := true
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+TARGET_INIT_VENDOR_LIB := //device/motorola/hanoip/init:init_hanoip
+TARGET_RECOVERY_DEVICE_MODULES := init_hanoip
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_hanoip
+PRODUCT_NAME := infinity_hanoip
 PRODUCT_DEVICE := hanoip
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(60)
@@ -45,8 +48,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2460
 TARGET_SCREEN_WIDTH := 1080
-
-PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
