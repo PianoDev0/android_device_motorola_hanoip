@@ -72,7 +72,7 @@ ro.qcom.ims.use_moto_vt_ext=true
 DEVICE_PROVISIONED=1
 persist.sys.fflag.override.settings_provider_model=false
 ril.subscription.types=NV,RUIM
-ro.telephony.default_network=33,33
+ro.telephony.default_network=22,22
 
 # Incremental FS
 ro.incremental.enable=1

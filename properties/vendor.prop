@@ -134,7 +134,6 @@ persist.vendor.radio.is_wps_enabled=true
 persist.vendor.radio.add_power_save=1
 persist.vendor.radio.msgtunnel.start=true
 persist.vendor.radio.lte_vrte_ltd=1
-persist.vendor.radio.sw_mbn_update=0
 persist.vendor.radio.sar_sensor=1
 persist.vendor.radio.fi_supported=0
 persist.vendor.radio.rat_on=combine
