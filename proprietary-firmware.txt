@@ -1,0 +1,19 @@
+# All firmware images below are extracted from the release mentioned in proprietary-files.txt
+
+abl.elf:abl.img|2501e595bf9d500c50b747425eb949dc641d75d0;AB
+aop.mbn:aop.img|84644df36736503647034fc002f2d2c88e3813d7;AB
+BTFM.bin:bluetooth.img|65df0dc9cf9829719178791b9dbc62bebf5231ab;AB
+devcfg.mbn:devcfg.img|0adf957b1ed9e7d815f1c74e1f38a3ee6eb354cf;AB
+dspso.bin:dsp.img|6492cf39c487aeef80cc009312dafdfed54d386d;AB
+fsg.mbn:fsg.img|c5aad0609a1a974f34406ce078cc409e1ba96cb6;AB
+hyp.mbn:hyp.img|8f490080cd82512fbc3b8f64a8ec6e5461774a38;AB
+keymaster.mbn:keymaster.img|8d7132302da6d9dc3a4f6e0717c70412b3ef1caf;AB
+logo.bin:logo.img|664c7bac4590f5a4d1fc892653ec43f50b866719;AB
+NON-HLOS.bin:modem.img|0f79277ee6f3511d7d621d381506876ce43d7c46;AB
+prov64.mbn:prov.img|7e13202442d73035bc904e56b6ce8ee9adab99ae;AB
+qupfw.elf:qupfw.img|992dc0394cd79841c7005df9768228ab836a7572;AB
+storsec.mbn:storsec.img|62cff389066d47a8d5e18fe53e72d84c10400959;AB
+tz.mbn:tz.img|e9822a8d40943a45fb75fafcf5cea88fd894a8c1;AB
+uefi_sec.mbn:uefisecapp.img|4c92b14ad50c42d6c28b72faae8dd10132a6a172;AB
+xbl.elf:xbl.img|a0bb22429c2e07d6a325b532a3fe60536d08c1b4;AB
+xbl_config.elf:xbl_config.img|9bcb7ccf8a81fe8201ac3c14c48188ece9a9a068;AB
