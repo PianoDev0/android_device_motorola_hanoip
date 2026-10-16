@@ -65,8 +65,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Dolby
 $(call inherit-product, hardware/motorola/dolby/setup.mk)
 
-# Properties
--include $(LOCAL_PATH)/properties.mk
+# Properties (managed in BoardConfig.mk via properties/*.prop)
 
 # Permissions
 PRODUCT_COPY_FILES += \
