@@ -103,8 +103,7 @@ on firmware_mounts_complete
 
 on load_persist_props_action
     setprop vendor.usb.config  ${sys.usb.config}
-    setprop persist.vendor.mot.usb.config  ${persist.sys.usb.config:-" "}
-    setprop persist.sys.usb.config  " "
+    setprop persist.vendor.mot.usb.config  ${persist.sys.usb.config}
     setprop persist.vendor.usb.config  ${persist.sys.usb.config}
 
 on property:ro.boot.console=ttyGS0 && property:sys.usb.configfs=1

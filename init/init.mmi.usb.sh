@@ -421,22 +421,19 @@ case "$bootmode" in
         fi
 
         case "$usb_config" in
-            "mtp,adb" | "mtp" | "adb")
+            *adb* | "mtp")
             ;;
             *)
                 case "$mot_usb_config" in
-                    "mtp,adb" | "mtp" | "adb")
+                    *adb* | "mtp")
                         setprop persist.vendor.usb.config $mot_usb_config
                     ;;
                     *)
-                        case "$securehw" in
-                            "1" )
-                                setprop persist.vendor.usb.config mtp
-                            ;;
-                            *)
-                                setprop persist.vendor.usb.config adb
-                            ;;
-                        esac
+                        if [ -n "$mot_usb_config" ] && [ "$mot_usb_config" != " " ]; then
+                            setprop persist.vendor.usb.config $mot_usb_config
+                        else
+                            setprop persist.vendor.usb.config mtp,adb
+                        fi
                     ;;
                 esac
             ;;
