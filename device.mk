@@ -40,7 +40,8 @@ PRODUCT_PACKAGES += \
     NotchBarKiller \
     SettingsResHanoip \
     SystemUIResHanoip \
-    TelephonyResHanoip
+    TelephonyResHanoip \
+    UpdaterResHanoip
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
