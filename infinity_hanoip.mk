@@ -51,6 +51,6 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="hanoip_retail-user 11 S2RI32.32-20-9-9-2 1591b release-keys" \
-    BuildFingerprint=motorola/hanoip_retail/hanoip:11/S2RI32.32-20-9-9-2/1591b:user/release-keys \
+    BuildDesc="hanoip_retail-user 12 S2RI32.32-20-9-9-2 1591b release-keys" \
+    BuildFingerprint=motorola/hanoip_retail/hanoip:12/S2RI32.32-20-9-9-2/1591b:user/release-keys \
     DeviceProduct=hanoip_retail
