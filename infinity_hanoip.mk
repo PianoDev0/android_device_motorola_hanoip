@@ -30,6 +30,8 @@ INFINITY_MAINTAINER := "JonashOfficial"
 
 # Whether Including Google Apps
 WITH_GAPPS := true
+WITH_SU := true
+WITH_ADB_INSECURE := true
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 TARGET_INIT_VENDOR_LIB := //device/motorola/hanoip/init:init_hanoip
