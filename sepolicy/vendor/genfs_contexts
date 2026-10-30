@@ -56,3 +56,5 @@ genfscon sysfs /devices/platform/soc/a80000.spi/spi_master/spi2/spi2.0          
 
 # Thermal
 genfscon sysfs /devices/virtual/hwmon                                           u:object_r:sysfs_hwmon:s0
+genfscon proc /config                                                           u:object_r:proc_moto_boot:s0
+genfscon proc /hw                                                               u:object_r:proc_moto_boot:s0
