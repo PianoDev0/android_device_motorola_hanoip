@@ -139,6 +139,10 @@ on post-fs
     # Set capsensor calibration sysfs for MDMCTBK
     chown radio radio /sys/class/capsense/calibrate
     chmod 0660 /sys/class/capsense/calibrate
+    chown radio radio /sys/class/capsense/manual_calibrate
+    chmod 0660 /sys/class/capsense/manual_calibrate
+    chown radio radio /sys/class/capsense/reset
+    chmod 0660 /sys/class/capsense/reset
 
     # Setting Swappiness
     write /proc/sys/vm/swappiness 100

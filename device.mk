@@ -402,6 +402,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal
 
+# SAR / MDM Cutback
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sar/ctbk_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/motorola/mdmctbk/ctbk_cfg.xml
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH) \
