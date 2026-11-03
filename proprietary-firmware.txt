@@ -3,6 +3,8 @@
 abl.elf:abl.img|2501e595bf9d500c50b747425eb949dc641d75d0;AB
 aop.mbn:aop.img|84644df36736503647034fc002f2d2c88e3813d7;AB
 BTFM.bin:bluetooth.img|65df0dc9cf9829719178791b9dbc62bebf5231ab;AB
+cmnlib.mbn:cmnlib.img|5d5a9ce90059f7091c22d9e0f72bea6fb390935c;AB
+cmnlib64.mbn:cmnlib64.img|2bccc85a4135ff8d5ecb7a54b25a3c4254c9f219;AB
 devcfg.mbn:devcfg.img|0adf957b1ed9e7d815f1c74e1f38a3ee6eb354cf;AB
 dspso.bin:dsp.img|6492cf39c487aeef80cc009312dafdfed54d386d;AB
 fsg.mbn:fsg.img|c5aad0609a1a974f34406ce078cc409e1ba96cb6;AB
