@@ -156,6 +156,7 @@ persist.vendor.radio.add_power_save=1
 persist.vendor.radio.aosp_usr_pref_sel=true
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.ctbk_log=0
 persist.vendor.radio.data_con_rprt=1
 persist.vendor.radio.data_ltd_sys_ind=1
 persist.vendor.radio.dfr_mode_set=1
@@ -204,8 +205,6 @@ persist.vendor.sensors.odl.adsp=true
 ro.vendor.sensors.mot_ltv=true
 
 # SurfaceFlinger
-ro.surface_flinger.disable_hw_overlays=true
-debug.sf.disable_hw_overlays=1
 debug.sf.early.app.duration=16500000
 debug.sf.early.sf.duration=21000000
 debug.sf.earlyGl.app.duration=21000000

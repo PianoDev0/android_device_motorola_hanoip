@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 Project Infinity-X
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Disable ANGLE default allowlist for hanoip (Adreno 618 Vulkan 1.1 fails GLES3/gralloc) -->
+    <string-array name="config_angleAllowList">
+    </string-array>
+</resources>

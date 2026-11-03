@@ -128,10 +128,6 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 
-# Media
-TARGET_DISABLED_UBWC := true
-TARGET_USES_ION := true
-
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 

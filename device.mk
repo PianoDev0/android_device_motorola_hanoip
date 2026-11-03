@@ -36,6 +36,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResHanoip \
+    FrameworksResHanoipProduct \
     CarrierConfigResHanoip \
     NotchBarKiller \
     SettingsResHanoip \
