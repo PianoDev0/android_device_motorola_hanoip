@@ -32,7 +32,7 @@ INFINITY_MAINTAINER := "JonashOfficial"
 WITH_GAPPS := true
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
-TARGET_INIT_VENDOR_LIB := //device/motorola/hanoip/init:init_hanoip
+TARGET_INIT_VENDOR_LIB := //device/motorola/hanoip/libinit:init_hanoip
 TARGET_RECOVERY_DEVICE_MODULES := init_hanoip
 
 # Device identifier. This must come after all inclusions.
