@@ -440,6 +440,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# Remove broken/orphaned packages with missing proprietary shared libraries
+PRODUCT_PACKAGES_REMOVE += \
+    ImsRcsService \
+    uimgbaservice
+
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
