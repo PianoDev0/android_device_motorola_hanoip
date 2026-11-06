@@ -173,7 +173,30 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     libcamera2ndk_vendor \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    vendor.qti.hardware.camera.device@1.0.vendor \
+    MotoCamera5
+
+# Override stock AOSP camera & Aperture
+PRODUCT_PACKAGES_REMOVE += \
+    Aperture \
+    Camera2
+
+# Moto Camera Framework & Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/framework/com.motorola.frameworks.core.addon.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.motorola.frameworks.core.addon.jar \
+    $(LOCAL_PATH)/prebuilt/framework/com.motorola.motosignature.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.motorola.motosignature.jar \
+    $(LOCAL_PATH)/prebuilt/framework/moto-checkin.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/moto-checkin.jar \
+    $(LOCAL_PATH)/prebuilt/framework/moto-core_services.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/moto-core_services.jar \
+    $(LOCAL_PATH)/prebuilt/framework/moto-settings.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/moto-settings.jar \
+    $(LOCAL_PATH)/prebuilt/framework/moto.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/moto.jar \
+    $(LOCAL_PATH)/prebuilt/etc/permissions/com.motorola.camera5.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.camera5.xml \
+    $(LOCAL_PATH)/prebuilt/etc/permissions/com.motorola.frameworks.core.addon.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.frameworks.core.addon.xml \
+    $(LOCAL_PATH)/prebuilt/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
+    $(LOCAL_PATH)/prebuilt/etc/permissions/moto-checkin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-checkin.xml \
+    $(LOCAL_PATH)/prebuilt/etc/permissions/moto-core_services.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-core_services.xml \
+    $(LOCAL_PATH)/prebuilt/etc/permissions/moto-settings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-settings.xml \
+    $(LOCAL_PATH)/prebuilt/etc/permissions/moto.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto.xml \
+    $(LOCAL_PATH)/prebuilt/etc/permissions/privapp-permissions-com.motorola.camera5.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.camera5.xml
 
 # Init
 PRODUCT_PACKAGES += \

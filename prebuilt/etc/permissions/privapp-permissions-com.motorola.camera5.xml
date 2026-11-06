@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.motorola.camera5">
+        <permission name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+        <permission name="android.permission.CONTROL_DISPLAY_BRIGHTNESS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_NOTIFICATIONS"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>
