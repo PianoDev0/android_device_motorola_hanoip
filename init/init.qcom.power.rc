@@ -28,7 +28,7 @@ on early-init
 on init
     # set default schedTune value for foreground/top-app
     write /dev/stune/foreground/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 10
+    write /dev/stune/top-app/schedtune.boost 0
     write /dev/stune/top-app/schedtune.prefer_idle 1
 
     # Boot time fs tuning
@@ -219,12 +219,11 @@ on property:vendor.setup.power=1
     setprop vendor.powerhal.init 1
 
 on boot
-    # Disable console_suspend to get better logging for kernel crashes
-    write /sys/module/printk/parameters/console_suspend N
+    # Enable console_suspend to allow deep sleep
+    write /sys/module/printk/parameters/console_suspend Y
 
     # Enable suspend to idle mode to reduce latency during suspend/resume
     write /sys/power/mem_sleep "s2idle"
 
-# If UART is on, enable console_suspend on boot_complete to save power
-on property:sys.boot_completed=1 && property:init.svc.console=running
+on property:sys.boot_completed=1
     write /sys/module/printk/parameters/console_suspend Y

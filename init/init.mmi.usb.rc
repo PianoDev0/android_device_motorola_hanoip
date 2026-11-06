@@ -132,12 +132,6 @@ on property:ro.vendor.bootreason=kernel_panic
 on property:sys.boot_completed=*
     setprop vendor.boot_completed ${sys.boot_completed}
 
-on property:persist.vendor.usb.config=*
-    setprop persist.sys.usb.config ${persist.vendor.usb.config}
-
-on property:vendor.usb.config=*
-    setprop sys.usb.config ${vendor.usb.config}
-
 on property:vendor.usb.controller=*
     setprop sys.usb.controller ${vendor.usb.controller}
 
