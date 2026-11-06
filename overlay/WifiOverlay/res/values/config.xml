@@ -41,7 +41,11 @@
 
     <!-- Configure wifi tcp buffersizes in the form:
          rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
-    <string name="config_wifi_tcp_buffers" translatable="false">524288,2097152,8388608,262144,524288,4194304</string>
+    <string name="config_wifi_tcp_buffers" translatable="false">110592,221184,16777216,110592,221184,16777216</string>
+
+    <!-- RSSI thresholds for 5GHz -->
+    <integer translatable="false" name="config_wifiFrameworkwifi_score_bad_rssi_threshold_5GHz">-82</integer>
+    <integer translatable="false" name="config_wifiFrameworkwifi_score_low_rssi_threshold_5GHz">-77</integer>
 
     <!-- Wifi driver supports Automatic channel selection (ACS) for softap -->
     <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
