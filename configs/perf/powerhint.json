@@ -56,9 +56,10 @@
       "Name": "GPUMinFreq",
       "Path": "/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
       "Values": [
-        "0",
-        "6"
+        "7",
+        "4"
       ],
+      "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
@@ -372,7 +373,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "0"
+      "Value": "4"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
